@@ -39,7 +39,6 @@ Por otro lado, hay 4 máquinas victimas (Linux y Windows) donde tendrás diferen
 - Enumeración
 - CVE
 
---------------------------------------------
 ### **HERRAMIENTAS**
 Dentro de las herramientas que se utilizará para resolver este examen tenemos.
 
