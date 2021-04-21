@@ -152,6 +152,7 @@ root@kali:~# sqlmap -u <URL CON VALUE GET> -D <BASE DE DATO> -T <TABLA> -C <COLU
 
 #### **Wordpress**
 Es un sistema de gestión de contenidos, enfocado a la creación de cualquier tipo de página web. Actualmente es utilizado para realizar contenido web dentro de usuarios y empresas.
+
 •	Listar usuarios
 ```
 root@kali:~# wpscan --url <URL > --enumerate u
