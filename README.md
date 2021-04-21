@@ -64,7 +64,7 @@ Dentro de las herramientas que se utilizará para resolver este examen tenemos.
 - Rainbow Crack
 
 #### **PASSWORD**
-•	Saber el tipo de hash
+- Saber el tipo de hash
 ```
 root@kali:~# hash-identifier <HASH>
    #########################################################################
@@ -91,15 +91,15 @@ Least Possible Hashs:
 --------------------------------------------------
 ```
 
-•	Listar formato
+- Listar formato
 ```
 root@kali:~# john –list=formats
 ```
-•	Revisar hash en un diccionario
+- Revisar hash en un diccionario
 ```
 root@kali:~# john --format=<FORMATO HASH> --wordlist=<diccionario> <archivo hash>
 ```
-•	Revisar password
+- Revisar password
 ```
 root@kali:~# john --show <archivo hash>
 ```
@@ -107,19 +107,19 @@ root@kali:~# john --show <archivo hash>
 #### **Enumeración**
 La idea es encontrar puertos abiertos, sistemas operativos, servicios. Para ello se puede usar Nmap. La ventaja de Nmap es que se puede combinar las consultas realizadas, permitiendo agilizar el escaneo dentro de la red víctima. Si quieren guardar lo obtenido en los escaneo se puede utilizar `-oN <ARCHIVO SALIDA>`
    
-•	Ver Sistema Operativo
+- Ver Sistema Operativo
 ```
 root@kali:~# nmap -O <IP/RED>
 ```
-•	Ver hosts con puerto abierto
+- Ver hosts con puerto abierto
 ```
 root@kali:~# nmap -p <PUERTO> <RED>
 ```
-•	Ver versión del servicio
+- Ver versión del servicio
 ```
 root@kali:~# nmap -sV <IP/RED>
 ```
-•	Enumerar mediante ICMP
+- Enumerar mediante ICMP
 ```
 root@kali:~# nmap -sC <IP/RED>
 ```
@@ -127,7 +127,7 @@ root@kali:~# nmap -sC <IP/RED>
 #### **Modificación de Archivos**
 En varias ocasiones se han modificado archivos, una opción es revisar el hash de cada archivo y compararlo con los hashes que se tienen antes de que sean modificado. Para ello hay varias formas tanto por entorno grafico como para consola. Esta guía mostrará el uso del comando rhash
 
-•	Listar hashes
+- Listar hashes
 ```
 root@kali:~# rhash -a --bsd <ARCHIVO>
 ```
@@ -136,19 +136,19 @@ root@kali:~# rhash -a --bsd <ARCHIVO>
 #### **Base de datos**
 Las bases de datos son importantes, ya que en ella los administradores alojan los datos que serán procesados por los sistemas.
 
-•	Listar Base de datos
+- Listar Base de datos
 ```
 root@kali:~# sqlmap -u <URL CON VALUE GET> --dbs
 ```
-•	Listar Tablas
+- Listar Tablas
 ```
 root@kali:~# sqlmap -u <URL CON VALUE GET> -D <BASE DE DATO> --tables
 ```
-•	Listar Columnas
+- Listar Columnas
 ```
 root@kali:~# sqlmap -u <URL CON VALUE GET> -D <BASE DE DATO> -T <TABLA> --columns
 ```
-•	Mostrar datos
+- Mostrar datos
 ```
 root@kali:~# sqlmap -u <URL CON VALUE GET> -D <BASE DE DATO> -T <TABLA> -C <COLUMNAS SEPARADAS POR ,> --dump
 ```
@@ -156,11 +156,11 @@ root@kali:~# sqlmap -u <URL CON VALUE GET> -D <BASE DE DATO> -T <TABLA> -C <COLU
 #### **Wordpress**
 Es un sistema de gestión de contenidos, enfocado a la creación de cualquier tipo de página web. Actualmente es utilizado para realizar contenido web dentro de usuarios y empresas.
 
-•	Listar usuarios
+- Listar usuarios
 ```
 root@kali:~# wpscan --url <URL > --enumerate u
 ```
-•	Revisar password
+- Revisar password
 ```
 root@kali:~# wpscan --url <URL > --passwords <ARCHIVO CLAVE> --usernames <USUARIO>
 ```
@@ -169,15 +169,15 @@ root@kali:~# wpscan --url <URL > --passwords <ARCHIVO CLAVE> --usernames <USUARI
 #### **Rainbow Attack**
 La idea de este tipo de ataque es tener un gran archivo (indexado) con los hashes de las contraseñas, lo que permite al atacante comparar hashes y no encriptar buscar palabras y compararlas con los hashes optimizando el proceso.
 
-•	Generar Listado Rainbow
+- Generar Listado Rainbow
 ```
 root@kali:~# rtgen <TIPO HASH> <CARACTERES> <MIN LENGHT PASS> <MAX LENGHT PASS> <INDICE> <LOGITUD DE CADENA> <NUMERO DE CADENAS> <NUMERO DE PART>
 ```
-•	Ordenar e Indexar archivo Rainbow
+- Ordenar e Indexar archivo Rainbow
 ```
 root@kali:~# rtsort <ARCHIVO>
 ```
-•	Buscar password
+- Buscar password
 ```
 root@kali:~# rcrack <ARCHVIO> -h <HASH>
 root@kali:~# rcrack <ARCHVIO> -l <ARCHIVO CON HASHES>
@@ -186,11 +186,11 @@ root@kali:~# rcrack <ARCHVIO> -l <ARCHIVO CON HASHES>
 #### **Fuerza Bruta**
 La idea de este tipo de ataque es tener un probar (por la fuerza) una conexión valida a algún servicio.
 
-•	Fuerza Bruta con usuario conocido
+- Fuerza Bruta con usuario conocido
 ```
 root@kali:~# hydra -t <NUMERO DE CONEXIÓN PARALELA> -l <USUARIO> -P <ARCHIVO CON PASS> -s <PUERTO> <URL> <SERVICIO>
 ```
-•	Fuerza Bruta con lista de usuarios
+- Fuerza Bruta con lista de usuarios
 ```
 root@kali:~# hydra -t <NUMERO DE CONEXIÓN PARALELA> -L <ARCHIVO CON USUARIO> -P <ARCHIVO CON PASS> -s <PUERTO> <URL> <SERVICIO>
 ```
@@ -198,12 +198,12 @@ root@kali:~# hydra -t <NUMERO DE CONEXIÓN PARALELA> -L <ARCHIVO CON USUARIO> -P
 #### **Generación de Diccionario**
 Dentro de las herramientas que posee Kali, tenemos CEWL la que nos permite generar diccionarios a partir de algún sitio web (capturando las palabras únicas dentro del sitio) y se puede generar patrones de búsqueda.
 
-•	Generar Diccionario genérico
+- Generar Diccionario genérico
 ```
 root@kali:~# cewl <URL> -w <ARCHIVO A GUARDAR>
 root@kali:~# cewl <URL> -w <ARCHIVO A GUARDAR> -m <LARGO DE LAS PALABRAS>
 ```
-•	Diccionario con correos
+- Diccionario con correos
 ```
 root@kali:~# cewl <URL> -w <ARCHIVO A GUARDAR> -m -e
 ```
@@ -212,16 +212,16 @@ root@kali:~# cewl <URL> -w <ARCHIVO A GUARDAR> -m -e
 Analizar lo que pasa en la red permite entender lo que ocurre dentro de nuestra red, capturando los paquetes que se transmiten.
 Una de las mejores herramientas que existe actualmente es Wireshark y simplemente hay que empezar a filtrar los parámetros. Todo filtro puede ser concatenado con &&. Para saber sobre otros filtros puede visitar https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html
 
-•	Buscar contraseñas
+- Buscar contraseñas
 ```
 http.request.method == POST
 http contains “<PALABRAS>”
 ```
 >los id para claves más utilizados son pwd, pass, password.
-•	Detectar Sysflood
+- Detectar Sysflood
 ```
 tcp.flags.syn == 1 and tcp.flags.ack == 0
 ```
 
 ### **Videos relacionados**
-•	[Partyhack | ¿Como rendir el CEH Practical y no morir en el intento?](https://www.youtube.com/watch?v=pjlV-n43sns)
+- [Partyhack | ¿Como rendir el CEH Practical y no morir en el intento?](https://www.youtube.com/watch?v=pjlV-n43sns)
