@@ -17,7 +17,7 @@ Por otro lado, háganse una cuenta en Hack The Box, y practiquen con los challen
 7.	No puede tener dos o más monitores conectados
 #### Del CEH-P
 1.	Solo puede acceder a recursos web dentro de las máquinas entregadas
-2.	Puede acceder a los apuntes entregado por EC-COUNSIL (están dentro de las máquinas atacantes)
+2.	Puede acceder a los apuntes entregado por EC-COUNCIL (están dentro de las máquinas atacantes)
 3.	No se permite hablar con nadie, ya sea directa o indirectamente
 4.	Si necesita pararse o estirarse, puede hacerlo, pero sin salir de área de la cámara
 5.	Se permite 15 min de descanso
