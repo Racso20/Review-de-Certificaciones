@@ -210,7 +210,7 @@ root@kali:~# cewl <URL> -w <ARCHIVO A GUARDAR> -m -e
 
 #### **Analizar paquetes de red**
 Analizar lo que pasa en la red permite entender lo que ocurre dentro de nuestra red, capturando los paquetes que se transmiten.
-Una de las mejores herramientas que existe actualmente es Wireshark y simplemente hay que empezar a filtrar los parámetros. Todo filtro puede ser concatenado con &&. Para saber sobre otros filtros puede visitar https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html
+Una de las mejores herramientas que existe actualmente es Wireshark y simplemente hay que empezar a filtrar los parámetros. Todo filtro puede ser concatenado con &&. Para saber sobre otros filtros puede visitar <a href="https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html" target="_blank">https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html</a> 
 
 - Buscar contraseñas
 ```
@@ -224,4 +224,4 @@ tcp.flags.syn == 1 and tcp.flags.ack == 0
 ```
 
 ### **Videos relacionados**
-- [Partyhack | ¿Como rendir el CEH Practical y no morir en el intento?](https://www.youtube.com/watch?v=pjlV-n43sns)
+- <a href="https://www.youtube.com/watch?v=pjlV-n43sns" target="_blank">Partyhack | ¿Como rendir el CEH Practical y no morir en el intento?</a>
