@@ -1,4 +1,4 @@
-# eJOT v1
+# eJPT v1
 
 ### **Antedecentes**
 Esta certificación corresponde a la certificación básica de pentester de eLearn Security y consiste en 20 preguntas que deberás obtener al atacar las diferentes máquinas víctimas. Este examen dura 3 días desde que se inicia y lo que busca es demostrar que una persona sabe los conceptos prácticos al realizar un Ethical Hacking (identificar vectores de ataque, escanear redes, detectar S.O. detectar vulnerabilidades, realizar Pentest Web, entre otras cosas).
