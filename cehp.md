@@ -2,7 +2,7 @@
 
 ### **Antedecentes**
 Esta certificación corresponde a la certificación practica del Ethical Hacking de EC-Counsil y consiste en 20 preguntas del tipo Challenge/CTF. Este examen dura 6 horas desde que se inicia y lo que busca es demostrar que una persona sabe los conceptos prácticos al realizar un Ethical Hacking (identificar vectores de ataque, escanear redes, detectar S.O. detectar vulnerabilidades, realizar Pentest Web, entre otras cosas).
-Preparación
+#### Preparación
 Esta prueba presenta una dificultad entre básica y media por lo que con estudio se podrá rendir y pasar fácilmente. Para prepararse para esta prueba, primero debes entender los conceptos teóricos del Ethical Hacking (vuelva a ver los apuntes del CEH si los tiene, vea webinar al respecto), esto le ayudará a la hora de entender los ataques que está realizando.
 Por otro lado, háganse una cuenta en Hack The Box, y practiquen con los challenge y máquinas que presenta esta plataforma (si quieren pueden pagar por la cuenta VIP ya que pueden acceder a maquinas retiradas y revisar los WriteUp). También pueden hacerlo con Vulnhub, Tryhackme o Hackzone que son página con la misma temática. También puede entrar a las academias de Hack de Box donde te capacitan en diversos temas de ciberseguridad. 
 
