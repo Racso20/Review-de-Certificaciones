@@ -69,11 +69,13 @@ La idea es poder ejecutar exploit conocidos a una máquina víctima, para ello e
 ```
 msf6 > search <DATO A BUSCAR>
 ```
+
 - Ejecutar Vulnerabilidad/exploit
 ```
 msf6 > use <PATH DE VULNERABILIDAD>
 <SETEAR VARIABLES>
 msf6 > run
+```
 - Setear Variables
 ```
 msf6 > SET <OPCIÓN> <VALOR>
