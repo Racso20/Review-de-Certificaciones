@@ -162,3 +162,13 @@ root@kali:~# wfuzz –hc <FILTROS PARA CÓDIGOS HTTP> -w <DICCIONARIO> -b cookie
 ```
 root@kali:~# wfuzz –hc <FILTROS PARA CÓDIGOS HTTP> -w <DICCIONARIO> -H "myheader: headervalue" -H "myheader2: headervalue2" <URL>
 ```
+
+#### **Generar rutas de red**
+- Via Gateway
+```
+root@kali:~# ip route add {NETWORK/MASK} via {GATEWAYIP} 
+```
+- Via Dispositivo
+```
+root@kali:~# ip route add {NETWORK/MASK} dev {DEVICE} 
+```
